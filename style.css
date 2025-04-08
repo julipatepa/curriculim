@@ -1,56 +1,62 @@
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .background-slider {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    overflow: hidden;
-  }
-  
-  .slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.background-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('fondo.png'); /* Cambiá por tu imagen real */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Oscurecido suave a la izquierda como en Freelancer */
+.dark-overlay {
+  width: 100%;
+  max-width: 600px;
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0));
+  height: 100%;
+  z-index: 2;
+  animation: fadeInLeft 1.5s ease-in-out;
+}
+
+/* Animación suave al aparecer */
+@keyframes fadeInLeft {
+  0% {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transform: translateX(-30px);
   }
-  
-  .slide.active {
+  100% {
     opacity: 1;
+    transform: translateX(0);
   }
-  
-  /* Capa oscura sobre el fondo para mejorar contraste */
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-  }
-  
-  /* Contenido desenfocado con fondo oscuro semitransparente */
-  .content-overlay {
-    position: relative;
-    z-index: 2;
-    backdrop-filter: blur(6px);
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 16px;
-    padding: 2.5rem;
-    margin: auto;
-    max-width: 960px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  }
-  
+}
+
+.background-fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.bg-slide.active {
+  opacity: 1;
+}

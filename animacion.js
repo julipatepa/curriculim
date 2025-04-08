@@ -1,8 +1,8 @@
-const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
+const slides = document.querySelectorAll('.bg-slide');
+let current = 0;
 
 setInterval(() => {
-  slides[currentSlide].classList.remove('active');
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].classList.add('active');
+  slides[current].classList.remove('active');
+  current = (current + 1) % slides.length;
+  slides[current].classList.add('active');
 }, 5000);
