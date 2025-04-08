@@ -44,14 +44,15 @@
     <div class="bg-slide" style="background-image: url('fondo2.png');"></div>
   </div>
 
-  <!-- Capa oscura izquierda -->
-  <div class="dark-overlay position-absolute top-0 start-0 d-flex align-items-center h-100 px-4">
+  <!-- QUITAMOS position-absolute para que respete el padding -->
+<div class="main-content">
+  <div class="dark-overlay d-flex align-items-center h-100 px-4">
     <div class="text-white">
       <img src="logo.png" alt="Logo JRM" style="width: 120px;" class="mb-3" />
       <h2 class="mb-3 text-info">Soluciones Integrales</h2>
       <p class="lead">
-        Soluciono problemas digitales y técnicos a medida. Soy técnico informático y desarrollador full stack con experiencia en software, hardware, redes y automatización. Desarrollo plataformas web personalizadas, doy soporte técnico y realizo instalaciones de cámaras y mantenimiento de PC y redes</p>
-
+        Soluciono problemas digitales y técnicos a medida...
+      </p>
       <div class="d-grid gap-3 mt-4">
         <a href="https://tickets-2-bger.onrender.com/" target="_blank" class="btn btn-info btn-custom">📩 Crear Ticket</a>
         <a href="https://wa.me/5491138479551" target="_blank" class="btn btn-success btn-custom">💬 WhatsApp</a>
@@ -59,6 +60,8 @@
       </div>
     </div>
   </div>
+</div>
+
 
   <!-- JS de Bootstrap + tu animación -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
