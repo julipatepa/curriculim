@@ -60,3 +60,18 @@ body, html {
 .bg-slide.active {
   opacity: 1;
 }
+
+.navbar {
+  z-index: 10;
+  position: relative;
+}
+
+.navbar .btn {
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+  transform: scale(1.05);
+}
