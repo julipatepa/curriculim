@@ -17,25 +17,12 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-4">
     <a class="navbar-brand fw-bold text-info" href="#">JRM</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
+    
+
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav gap-2 text-center">
-        <li class="nav-item">
-          <a class="custom-nav-btn" href="https://tickets-2-bger.onrender.com/" target="_blank">📩 Tickets</a>
-        </li>
-        <li class="nav-item">
-          <a class="custom-nav-btn" href="https://wa.me/5491138479551" target="_blank">💬 WhatsApp</a>
-        </li>
-        <li class="nav-item">
-          <a class="custom-nav-btn" href="mailto:juli_tepa@hotmail.com">✉️ Email</a>
-        </li>
-      </ul>
+      
     </div>
   </nav>
-  
 
   <!-- Fondo con slideshow -->
   <div class="background-fade">
@@ -44,26 +31,59 @@
     <div class="bg-slide" style="background-image: url('fondo2.png');"></div>
   </div>
 
-  <!-- QUITAMOS position-absolute para que respete el padding -->
-<div class="main-content">
-  <div class="dark-overlay d-flex align-items-center h-100 px-4">
-    <div class="text-white">
-      <img src="logo.png" alt="Logo JRM" style="width: 120px;" class="mb-3" />
-      <h2 class="mb-3 text-info">Soluciones Integrales</h2>
-      <p class="lead">
-        Soluciono problemas digitales y técnicos a medida...
-      </p>
-      <div class="d-grid gap-3 mt-4">
-        <a href="https://tickets-2-bger.onrender.com/" target="_blank" class="btn btn-info btn-custom">📩 Crear Ticket</a>
-        <a href="https://wa.me/5491138479551" target="_blank" class="btn btn-success btn-custom">💬 WhatsApp</a>
-        <a href="mailto:juli_tepa@hotmail.com" class="btn btn-primary btn-custom">✉️ Correo</a>
+  <!-- Sección principal con botones -->
+  <div class="main-content">
+    <div class="dark-overlay d-flex align-items-center h-100 px-4">
+      <div class="text-white">
+        <img src="logo.png" alt="Logo JRM" style="width: 120px;" class="mb-3" />
+        <h2 class="mb-3 text-info">Soluciones Integrales</h2>
+        <p class="lead">En JRM resolvemos tus problemas digitales y técnicos con soluciones claras, efectivas y a medida.</p>
+        <div class="d-grid gap-3 mt-4">
+          <a href="https://tickets-2-bger.onrender.com/" target="_blank" class="btn btn-info btn-custom">📩 Crear Ticket</a>
+          <a href="https://wa.me/5491138479551" target="_blank" class="btn btn-success btn-custom">💬 WhatsApp</a>
+          <a href="mailto:juli_tepa@hotmail.com" class="btn btn-primary btn-custom">✉️ Correo</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+  <!-- Sección de presentación profesional -->
+  <section class="dark-overlay text-white py-5 px-4">
+    <div class="container">
+      <h3 class="text-info mb-4">¿Qué es JRM Soluciones?</h3>
+      <p><strong>JRM</strong> es una propuesta profesional, dedicada a brindar: <strong>soluciones tecnológicas integrales</strong>. Nos especializamos en soporte técnico, desarrollo web, programación y asesoramiento digital. Nuestro enfoque es claro: <strong>resolver tus problemas tecnológicos de manera simple, directa y efectiva</strong>.</p>
 
-  <!-- JS de Bootstrap + tu animación -->
+      <h4 class="mt-4 text-info">🛠️ Tecnologías y herramientas</h4>
+      <ul>
+        <li><strong>HTML5 / CSS3 / JavaScript:</strong> desarrollo web moderno y responsivo.</li>
+        <li><strong>Python + Flask:</strong> aplicaciones web funcionales, con lógica, formularios y bases de datos.</li>
+        <li><strong>MySQL / SQLite:</strong> manejo seguro y eficiente de información.</li>
+        <li><strong>Sistemas Linux y Windows:</strong> instalación, optimización y soporte.</li>
+        <li><strong>Git y GitHub:</strong> control de versiones y trabajo colaborativo.</li>
+      </ul>
+
+      <h4 class="mt-4 text-info">🔧 Servicios que ofrecemos</h4>
+      <ul>
+        <li><strong>Soporte técnico presencial:</strong> reparación de PCs, armado, limpieza, instalación de sistemas, redes y cámaras.</li>
+        <li><strong>Soporte remoto:</strong> soluciones al instante desde cualquier lugar.</li>
+        <li><strong>Desarrollo web personalizado:</strong> diseño de sitios, formularios, integración con WhatsApp, sistemas con panel de control.</li>
+        <li><strong>Scripting Bash:</strong> automatización de tareas y mantenimiento eficiente en sistemas Linux.</li>
+      </ul>
+
+      <h4 class="mt-4 text-info">🚀 ¿Por qué elegir JRM?</h4>
+      <ul>
+        <li>Trato directo, sin intermediarios.</li>
+        <li>Soluciones claras, sin tecnicismos innecesarios.</li>
+        <li>Atención personalizada para cada cliente.</li>
+        <li>Pasión por lo que hacemos y compromiso con cada proyecto.</li>
+        <li>Experiencia en campo y constante actualización.</li>
+      </ul>
+
+      <p class="mt-4">Ya sea que necesites ayuda con tu PC, desarrollar una app, instalar cámaras o crear una web profesional, <strong>en JRM encontrás soluciones reales</strong>.</p>
+    </div>
+  </section>
+
+  <!-- JS de Bootstrap + animación personalizada -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="animacion.js"></script>
 </body>
